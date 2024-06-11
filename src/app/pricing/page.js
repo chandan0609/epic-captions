@@ -1,0 +1,16 @@
+import PageHeaders from "@/components/PageHeaders";
+
+export default function PricingPage() {
+  return (
+    <div>
+      <PageHeaders
+        h1Text={"Check out our pricing"}
+        h2Text={"Our pricing is very simple"}
+      />
+      <div className="bg-white text-slate-700 rounded-lg max-w-xs mx-auto p-4 text-center">
+        <h3 className="text-3xl font-bold">Free</h3>
+        <h4>Free Forever</h4>
+      </div>
+    </div>
+  );
+}
