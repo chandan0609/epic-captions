@@ -1,14 +1,6 @@
 import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
 import uniqid from "uniqid";
 
-export const config = {
-  api: {
-    bodyParser: {
-      sizeLimit: "1mb", // Adjust the limit as needed
-    },
-  },
-};
-
 export async function POST(req) {
   const formData = await req.formData();
   const file = formData.get("file");
